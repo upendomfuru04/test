@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+    <title>getval</title>
+  <title></title>
+  <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<style>
+.oil {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.oil a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+
+
+</style>
+
+
+
+<div class="oil">
+  <a href="#"><i class="icon-phone"></i> +255 717 568 861</a> 
+  <a href="#"></a> 
+  <a href="#"></a>
+   <a href="#"></a> 
+  <a href="#"></a>
+   <a href="#"></a> 
+  <a  href="#"><i class="icon-sign-in"></i> Sign In</a>
+</div>
+
+
+<div id="top-part">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-3 col-lg-4 left">
+                            <a href="https://www.getvalue.co/">
+                                <img src="https://www.getvalue.co/assets/themes/logo.png" class="site-logo" alt="www.getvalue.co" style="background-size: 10px;">
+                            </a>
+                        </div>
+
+<div class="col-sm-6 col-md-5 col-lg-5">
+      <div class="input-group" id="adv-search">
+        <input type="text" value="" id="search_in_title" class="form-control" placeholder="Search for word in the title" />
+         <div class="input-group-btn">
+             <div class="btn-group" role="group">
+            <div class="dropdown dropdown-lg">
+                <button type="button" class="button-more dropdown-toggle mine-color" data-toggle="dropdown" aria-expanded="false">More <span class="caret"></span></button>
+                 <div class="dropdown-menu dropdown-menu-right" role="menu">
+                     <form class="form-horizontal row" method="GET" id="bigger-search">
+                            <div class="col-md-6">
+                             <select class="form-control" id="product_category">
+                                  <option value="">Select Product Category</option>
+                                     <option value="">All</option>
+                                     <option value="1">Ebooks</option><option value="2">Audiobooks</option><option value="3">Online Training & Programs</option>                                      </select>
+                                                    </div>
+                                     <div class="col-md-6">
+                                       <select class="form-control" id="blog_category">
+                                            <option value="">Select Blog Category</option>
+                                            <option value="">All</option>
+                                         <option value="1">Blog</option><option value="2">Business/Investing</option><option value="3">Inspirations</option><option value="4">Self Help</option><option value="5">Online Programs & Training</option><option value="7">Personal Development</option><option value="8">Religion And Spirituality</option>                                                        </select>
+                                      </div>
+                                 </form>
+                            </div>
+                              </div>
+                      <a onclick="submitSearchForm()" class="btn btn-go-search mine-color">
+                        <i class="fa fa-search"></i> 
+                         
+                     </a>
+                  </div>
+              </div>
+          </div>
+      </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="basket-box">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <img src="https://www.getvalue.co/assets/themes/icons/green-basket.png" class="green-basket" alt="">
+                                        </td>
+                                        <td>
+                            <div class="center">
+                                    <h4>Your Basket</h4>
+                             <a href="#">Checkout</a> |
+                          <a href="#">Shopping Cart</a>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <ul class="shop-dropdown">
+                             <li class="dropdown text-center">
+                          <a href="cart" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
+                          <div>
+                            <span class="sumOfItems" id="cartCounts">0</span> Items</div>
+                         <img src="https://www.getvalue.co/assets/themes/icons/shopping-cart-icon-515.png" alt="">
+                              <span class="caret"></span>
+                                                        </a>
+                        <ul class="dropdown-menu dropdown-menu-right dropdown-cart" role="menu" id="cartList">
+                                                        <li class="text-center">No Product</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>        
+                    </div>
+                </div>
+            </div>
+
+
+        
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="#">Home</a></li>
+        <li>
+        <a href="#">Ebooks</a>
+      </li>
+      <li >
+        <a  href="#">Audiobooks</a>
+      </li>
+      <li>
+        <a href="#">Online Trainings & Programs </a>
+      </li>
+      <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inspirations <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Business/Investing</a></li>
+            <li><a href="#">Inspirations</a></li>
+            <li><a href="#">Self Help</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Online Programs & Training</a></li>
+            <li><a href="#">Personal Development</a></li>
+            <li><a href="#">Religion And Spirituality</a></li>
+          </ul>
+        </li>
+       
+      <li >
+        <a href="#">GetValue TV</a>
+      </li>
+      <li >
+        <a  href="#">Register</a>
+      </li>
+      <li >
+        <a href="#">Login</a>
+      </li>
+ </div>
+  </div>
+</nav>
+
+
+
+ 
+               
+
+
+
+
+
+</body>
+</html>
