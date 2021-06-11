@@ -194,7 +194,7 @@ ul{
 
    display: flex;
   flex-wrap: wrap;
-  max-width:350px;
+ 
   align-items: center;
 }
 
@@ -216,8 +216,6 @@ ul{
   <a href="#"></a> 
   <a href="#"></a>
    <a href="#"></a> 
-  <a href="#"></a>
-   <a href="#"></a> 
   <a  href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a>
 </div>
 
@@ -232,7 +230,9 @@ ul{
          <div class="input-group-btn">
              <div class="btn-group" role="group">
             <div class="dropdown dropdown-lg">
-                <button type="button" class="button-more dropdown-toggle mine-color" data-toggle="dropdown" aria-expanded="false">More <span class="caret"></span></button>
+                <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="button" class="button-more dropdown-toggle mine-color" data-toggle="dropdown" aria-expanded="false">More <span class="caret"></span></button>
                  <div class="dropdown-menu dropdown-menu-right" role="menu">
                      <form class="form-horizontal row" method="GET" id="bigger-search">
                             <div class="col-md-6">
@@ -247,7 +247,9 @@ ul{
                                             <option value="">All</option>
                                          <option value="1">Blog</option><option value="2">Business/Investing</option><option value="3">Inspirations</option><option value="4">Self Help</option><option value="5">Online Programs & Training</option><option value="7">Personal Development</option><option value="8">Religion And Spirituality</option>                                                        </select>
                                       </div>
-                                 </form>
+    </form>
+                
+                                
                             </div>
                               </div>
                       <a onclick="submitSearchForm()" class="btn btn-go-search mine-color">
@@ -805,7 +807,8 @@ ul{
     </div>
 
 
-
+</body>
+</html>
 
 
 <!DOCTYPE html>
@@ -1046,7 +1049,13 @@ ul{
 
 
 
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
 
 
 
@@ -1098,6 +1107,8 @@ ul{
                     <div class="col-md-4">
                                     
                         <b><h4 style="text-align: left; color: white; font-size: 25px;">February Issue</h4>
+
+                            <hr style="width:80%; height:80px;">
                                     
                         <p style="text-align: right; color: white;">see inside >></p></b>
 
@@ -1107,7 +1118,7 @@ ul{
                         <a href="#" class="btn btn-success" style="float:left;background-color:  #d6bd60; width: 25%;
   font-size: 15px; "><i class="icon-shopping-cart"></i> BUY</a>
 
-                        <a href="#" class="btn btn-success" style="float: right; background-color: #d6bd60; width: 25%;
+                        <a href="#" class="btn btn-success" style="float: right; background-color: #d6bd60; width: 30%;
   font-size: 15px;">MORE</a>
 
                     </div>
@@ -1121,7 +1132,7 @@ ul{
                             <h5>That’s Weird…But I Like It!</h5>
                             <!-- <p></p> -->
                             <p>My girlfriend and I neither of us have jobs! Therefore, we have been entrepreneurs for quite a while. I do remember that, one day we spent a real long time</p>
-                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 25%;
+                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 50%;
   font-size: 15px;">Read more</a>
                         </div>
                         <hr>
@@ -1129,7 +1140,7 @@ ul{
                             <h5>Why I Don’t Want A Job</h5>
                             <!-- <p></p> -->
                             <p>There are a lots of common reasons why most people start their own businesses but if you look at them very closely you will discover that they all stems in</p>
-                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 25%;
+                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 50%;
   font-size: 15px;">Read more</a>
                         </div>
                         <hr>
@@ -1137,7 +1148,7 @@ ul{
                             <h5>Why I’m Not Here To Judge You Or Tell You How To Live Your Life</h5>
                             <!-- <p></p> -->
                             <p>Being a good entrepreneur does not necessarily mean you can start talking about yourself all the time and everyone will listen – but is quite the opposite. You need to</p>
-                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 25%;
+                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 50%;
   font-size: 15px;">Read more</a>
   <br>
           <br>
@@ -1154,7 +1165,8 @@ ul{
 
 </html>
 
-
+<br>
+<br>
 
 <!DOCTYPE html>
 <html>
@@ -1170,7 +1182,6 @@ body {
 
 
 .site-footer {
-  margin-top: 100px; /* Remove */
     position: relative;
     background-color:black;
     width: 100%;    
@@ -1185,9 +1196,6 @@ body {
     padding-top: 20px;
 }
 
-.site-footer .container h1 {
-    font-size: 40px;
-}
 
 
 
@@ -1200,7 +1208,7 @@ body {
 
 .site-footer .grid-item {
     padding: 5px;
-    color: #A2845C;
+    color: white;
 }
 
 
@@ -1219,33 +1227,33 @@ body {
 }
 
 .site-footer .container p {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     color:white;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .site-footer .container .logo-img {
-    width: 320px;
+    width: 220px;
     height: ;
     cursor: pointer;
 }
 
 .site-footer .grid-container .grid-item .social-buttons {
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 .site-footer .grid-container .grid-item .social-buttons a {
     display: inline-flex;
     text-decoration: none;
-    font-size: 30px;
-    width: 60px;
-    height: 60px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
     color: white;
     justify-content: center;
     align-items: center;
     position: relative;
-    margin: 0 8px;
+    margin: 0 2px;
 }
 
 
@@ -1271,44 +1279,30 @@ body {
   margin-right: 5px;
 }
 
-.info input {
-  display: block;
-  width: 300px;
-  height: 20px;
-  border: 0;
-  border-radius: 3px;
-  margin: 0 0 10px 0;
-  padding: 12px 10px;
-  background: #fff;
+.topnav .search-container {
+  float: right;
 }
 
-.info input:last-child {
-  margin: 0;
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
 }
 
-.info input:focus {
-  background: #eee;
-  outline: none;
-}
-
-
-input[type="submit"]{
-  vertical-align: top;
-  height: 25px;
-  width: 150px;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  border-radius: 3px;
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
   background: #d6bd70;
+  font-size: 17px;
+  border: none;
   cursor: pointer;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff;
 }
 
-input[type="submit"]:hover{
-  background:#d6bd70;
+ .search-container button:hover {
+  background: #d6bd70;
 }
 
 
@@ -1321,32 +1315,12 @@ input[type="submit"]:hover{
 [ Screen Sizes] */
 
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-
-    .site-footer {
-        height: 620px;
-        bottom: 0; 
-    }
-
-    .site-footer .grid-container {
-        display: grid;
-        grid-template-columns: 400px;
-    }
-
-    .site-footer .grid-container .inner-grid-container {
-        display: grid;
-        grid-template-columns: auto auto ;
-        text-align: left;
-    }
-
-
-}
 
 @media only screen and (min-width: 992px) {
 
     .site-footer {
-        height: 260px;
+        width: 300px;
+        height: 360px;
         bottom: 0;
     }
 
@@ -1378,11 +1352,12 @@ input[type="submit"]:hover{
                 <h2 style="color:white;">JOIN OUR NETWORK</h2>
                     <p>Get our best advice of the week direct to your inbox</p>
                     <div class="info">
-   
-    <input type="email" placeholder="Your Email">
-   </div>
-  <input  type="submit" value="Subscribe">
-  <br>
+   <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Your Email" name="search">
+      <button type="submit" style="background:#d6bd70;">Subscribe</button>
+    </form>
+  </div>
 
                  
                  <br>
