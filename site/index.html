@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<html>
 <html lang="en">
 <head>
     <title>getval</title>
@@ -14,92 +13,65 @@
 
 </head>
 <body>
-<style>
-.oil {
-  width: 100%;
-  background-color: #555;
-  overflow: auto;
-}
-
-.oil a {
-  float: left;
-  padding: 12px;
-  color: white;
-  text-decoration: none;
-  font-size: 17px;
-}
-.o img {
-width: 90%;
-height: 50%;
-align-items: center;
-}
-.container-fluid{
-    width: 80%;
-    align-items: center;
-}
+    <style>
 
 
-.row.heading h2 {
-    color: #fff;
-    font-size: 30px;
-    font-weight: 400;
-    text-align: center;
-    margin: 0 0 40px;
-    padding-bottom: 20px;
-    text-transform: uppercase;
-}
-ul{
-  margin:0;
-  padding:0;
-  list-style:none;
-}
-.heading.heading-icon {
-    display: block;
-}
-.padding-lg {
-    display: block;
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-.practice-area.padding-lg {
-    padding-bottom: 55px;
-    padding-top: 55px;
-}
-.practice-area .inner{ 
-     border:1px solid #999999; 
-     text-align:center; 
-     margin-bottom:28px; 
-     padding:40px 25px;
-}
-.our-webcoderskull .cnt-block:hover {
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
-    border: 0;
-}
-.practice-area .inner h3{ 
-    color:#3c3c3c; 
-    font-size:24px; 
-    font-weight:500;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 0;
-}
-.practice-area .inner p{ 
-    font-size:14px; 
-    line-height:22px; 
-    font-weight:400;
 
+
+.container {
+  box-sizing: border-box;
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: Arial;
+  font-size: 15px;
 }
-.practice-area .inner img{
-    display:inline-block;
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 92%;
+  padding: 10px;
 }
 
 
-.our-webcoderskull{
-  background:darkblue;
+
+ .flex-container2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #231f20;
+}
+
+.flex-container2 > div {
+  margin: 10px;
+  text-align: left;
+
+}
+.product-price{
+    color: white;
+
+}
+.flex-container2:hover{
+   border: 2px;
+   box-shadow:  0 4px 8px 0 rgba(0 ,0 ,0 ,0.2);
+}
+.product-title h5 a{
+    text-decoration: none;
+    color: white;
+}
+
+ 
+    .our-webcoderskull{
+  background:#005b99;
   
 }
-.our-webcoderskull .cnt-block{ 
-   float:left; 
-   width:100%; 
+.our-webcoderskull .cnt-block{  
+   width:90%; 
    background:#fff; 
    padding:30px 20px; 
    text-align:center; 
@@ -138,37 +110,6 @@ ul{
    line-height:20px; 
    font-weight:400;
 }
-
-.card {
-  box-shadow:  0 4px 8px 0 rgba(0 ,0 ,0 ,0.2);
-  max-width:320px;
-  text-align: center;
-  font-family: arial;
-  
-  
-}
-.card h4{
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 15px;
-  padding-left: 15px;
-  padding-top: 12px;
-}
-
-.star{
-  text-align: left;
-  padding-left: 15px;
-  padding-top: -50px;
-}
-
-.price {
-  color: grey;
-  font-size: 20px;
-  text-align: left;
-  padding-left: 15px;
-}
-
-
 .gaston-article{
     text-align: left;
     color: white;
@@ -176,671 +117,286 @@ ul{
 
 
 
-.card-img-actions {
-    position: relative
+
+            img {
+    max-width: 100%;
+    height: auto;
+}
+        section {
+            padding: 40px 0;
+        }
+ ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+.contact-area {
+    border-bottom: 1px solid #353C46;
 }
 
-.card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-    text-align: center
+.contact-content p {
+    font-size: 15px;
+    margin: 30px 0 60px;
+    position: relative;
 }
 
-.card-img {
-    width: 350px
-}
-.flex-container {
-
-   display: flex;
-  flex-wrap: wrap;
- 
-  align-items: center;
-}
-
-.flex-container > div {
-    box-shadow:  0 4px 8px 0 rgba(0 ,0 ,0 ,0.2);
-  width:140px;
-  margin: 10px;
-  text-align: center;
+.contact-content p::after {
+    background: #353C46;
+    bottom: -30px;
+    content: "";
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    width: 80%;
 }
 
+.contact-content h6 {
+    color: #8b9199;
+    font-size: 15px;
+    
+    margin-bottom: 10px;
+}
+.contact-content h6 a {
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 2px;
+
+}
+
+.contact-content span {
+    color: #353c47;
+    margin: 0 5px;
+    font-weight: 400;
+}
+
+.contact-social {
+    margin-top: 20px;
+}
+
+.contact-social > ul {
+    display: inline-flex;
+}
+
+.contact-social ul li a {
+    color: #8b9199;
+    display: inline-block;
+    height: 50px;
+    padding-top: 2px;
+    transition: all 0.4s ease 0s;
+    width: 30px;
+    font-size: 22px;
+}
 
 
+
+.contact-content img {
+    max-width: 210px;
+}
+
+section, .g {
+    background: #000000;
+    color: #868c96;
+}
+
+.g p {
+    text-align: center;
+}
+
+.g img {
+    width: 54px;
+}
 </style>
 
 
 
-<div class="oil">
-  <a href="#"><i class="fa fa-phone" aria-hidden="true"></i> +255 717 568 861</a> 
-  <a href="#"></a> 
-  <a href="#"></a>
-   <a href="#"></a> 
-  <a  href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Sign In</a>
-</div>
 
 
 
-        <img src="logo.png" style="width:550px; padding-right: 212px;">
-                    
-
-<div class="col-sm-6 col-md-5 col-lg-5">
-      <div class="input-group" id="adv-search">
-        <input type="text" value="" id="search_in_title" class="form-control" placeholder="Search for word in the title" />
-         <div class="input-group-btn">
-             <div class="btn-group" role="group">
-            <div class="dropdown dropdown-lg">
-                <form action="/action_page.php">
-      <input type="text" placeholder="Search.." name="search">
-      <button type="button" class="button-more dropdown-toggle mine-color" data-toggle="dropdown" aria-expanded="false">More <span class="caret"></span></button>
-                 <div class="dropdown-menu dropdown-menu-right" role="menu">
-                     <form class="form-horizontal row" method="GET" id="bigger-search">
-                            <div class="col-md-6">
-                             <select class="form-control" id="product_category">
-                                  <option value="">Select Product Category</option>
-                                     <option value="">All</option>
-                                     <option value="1">Ebooks</option><option value="2">Audiobooks</option><option value="3">Online Training & Programs</option>                                      </select>
-                                                    </div>
-                                     <div class="col-md-6">
-                                       <select class="form-control" id="blog_category">
-                                            <option value="">Select Blog Category</option>
-                                            <option value="">All</option>
-                                         <option value="1">Blog</option><option value="2">Business/Investing</option><option value="3">Inspirations</option><option value="4">Self Help</option><option value="5">Online Programs & Training</option><option value="7">Personal Development</option><option value="8">Religion And Spirituality</option>                                                        </select>
-                                      </div>
-    </form>
-                
-                                
-                            </div>
-                              </div>
-                      <a onclick="submitSearchForm()" class="btn btn-go-search mine-color">
-                        <i class="fa fa-search"></i> 
-                         
-                     </a>
-                  </div>
-              </div>
-          </div>
-      </div>
-<div class="col-sm-6 col-md-4 col-lg-3">
-                            <div class="basket-box">
-                                <table>
-                                    <tr>
-                                        <td>
-                                            <img src="https://www.getvalue.co/assets/themes/icons/green-basket.png" class="green-basket" alt="">
-                                        </td>
-                                        <td>
-                            <div class="center">
-                                    <h4>Your Basket</h4>
-                             <a href="#">Checkout</a> |
-                          <a href="#">Shopping Cart</a>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <ul class="shop-dropdown">
-                             <li class="dropdown text-center">
-                          <a href="cart" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"> 
-                          <div>
-                            <span class="sumOfItems" id="cartCounts">0</span> Items</div>
-                         <img src="https://www.getvalue.co/assets/themes/icons/shopping-cart-icon-515.png" alt="">
-                              <span class="caret"></span>
-                                                        </a>
-                        <ul class="dropdown-menu dropdown-menu-right dropdown-cart" role="menu" id="cartList">
-                                                        <li class="text-center">No Product</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>        
-                    </div>
-                </div>
-            </div>
-
-
+<b><h3>INSIDER'S POPULAR POST</h3></b>
+<br>
 <div class="container">
-  <br>
-               
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#"></a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li ><a href="#">Home</a></li>
-        <li>
-        <a href="#">Ebooks</a>
-      </li>
-      <li >
-        <a  href="#">Audiobooks</a>
-      </li>
-      <li>
-        <a href="#">Online Trainings & Programs </a>
-      </li>
-      <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Inspirations <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Business/Investing</a></li>
-            <li><a href="#">Inspirations</a></li>
-            <li><a href="#">Self Help</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Online Programs & Training</a></li>
-            <li><a href="#">Personal Development</a></li>
-            <li><a href="#">Religion And Spirituality</a></li>
-          </ul>
-        </li>
-       
-      <li >
-        <a href="#">GetValue TV</a>
-      </li>
-      <li >
-        <a  href="#">Register</a>
-      </li>
-      <li >
-        <a href="#">Login</a>
-      </li>
- </div>
-  </div>
-</nav>
-
-          
-<body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Get Value, Inc | A Global Online Digital Information Products Retailer</title>
-</head>
-<body>
-
-
-
-  <div id="home-slider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-        <li data-target="#home-slider" data-slide-to="0" class="active"></li>
-        <li data-target="#home-slider" data-slide-to="0" class=""></li>
-        <li data-target="#home-slider" data-slide-to="0" class=""></li>
-    </ol>
-
-    <div class="container-fluid">
-    <div class="carousel-inner" role="listbox">
-        <div class="item active">
-<div class="row">
-    <div class="col-sm-6 col-md-5 left-side slider-pl">
-     <a href="" class="o">
-      <img src="zero.png" class="img-responsive" alt="">
-                                    </a>
-                 </div>
-             <div class="col-sm-6 col-md-5 right-side">
-                <h3 class="text-center">
-                <a href="">
-               MWONGOZO KATIKA MAFANIKIO                                       </a>
-                 </h3>
-         <div class="description text-center">
-     Kila mmoja ana tafsiri tofauti kuhusu mafanikio na wengine wameenda mbali kwa kutafsiri mafanikio kwa namna wao wanavyoona wengine wanasema,lakini mafanikio ni nini? je ni kuwa na hela nyingi? Ni kuwa na familia bora ambayo ina mchango katika maisha yako? Mafanikio ni nini haswa? Twende pamoja katika kitabu cha MWONGOZO KATIKA MAFANIKIO kupata ukweli huu wa maana halisi ya Mafanikio na namna ya kuyapata.                                     
-        <br><span class="stars-container stars-23" >★★★★★</span> (4.5)
-                                    </div>
-                                    
-     <div class="price text-center">10000 <small>Tsh.</small></div>
-                                  <center></center>  <div class="xs-center">
-  <a class="option add-to-cart" data-goto="" href="#" data-id="">
-            <img src="https://www.getvalue.co/assets/themes/icons/shopping-cart-icon-515.png" alt="">
-                                            Buy Now
-                                        </a>
-             <a class="option right-5" href="">
-        <img src="https://www.getvalue.co/assets/themes/icons/info.png" alt="">
-                                            Preview
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                                <div class="item ">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-5 left-side slider-pl">
-                                    <a href="" class="o">
-                                        <img src="https://www.getvalue.co/media/products/200_awaiking_tips_08032020_04_54.JPG" class="img-responsive" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-5 right-side">
-                                    <h3 class="text-center">
-                                        <a href="">
-                                            200 Awakening Tips                                      </a>
-                                    </h3>
-                                    <div class="description text-center">
-                                        Sample Text                                     
-                                        <br><span class="stars-container stars-23" >★★★★★</span> (4.5)
-                                    </div>
-                                    
-                                    <div class="price text-right">15000 <small>Tsh.</small></div>
-                                    <div class="xs-center">
-
-                                        <a class="option add-to-cart" data-goto="" href="https://www.getvalue.co/home/product_details/200_awakening_tips" data-id="">
-                                            <img src="https://www.getvalue.co/assets/themes/icons/shopping-cart-icon-515.png" alt="">
-                                            Buy Now
-                                        </a>
-                                        <a class="option right-5" href="">
-                                            <img src="https://www.getvalue.co/assets/themes/icons/info.png" alt="">
-                                            Preview
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                                                <div class="item ">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-5 left-side slider-pl">
-                                    <a href="" class="o">
-                                        <img src="two.jpg" class="img-responsive" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-sm-6 col-md-5 right-side">
-                                    <h3 class="text-center">
-                                        <a href="">
-                                            Why I Hate Being An Employee                                        </a>
-                                    </h3>
-                                    <div class="description text-center">
-                                        Don’t switch jobs; start your own business                                      
-                                        <br><span class="stars-container stars-23" >★★★★★</span> (4.5)
-                                    </div>
-                                    
-                                    <div class="price text-center">25000 <small>Tsh.</small></div>
-                                    <center>
-                                    <div class="xs-center">
-
-                                        <a class="option add-to-cart" data-goto="" href="#" data-id="">
-                                            <img src="https://www.getvalue.co/assets/themes/icons/shopping-cart-icon-515.png" alt="">
-                                            Buy Now
-                                        </a>
-                                    <a class="option right-5" href="">
-                                    <img src="https://www.getvalue.co/assets/themes/icons/info.png" alt="">
-                                            Preview
-                                        </a></center>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>          </div>
-                                        <a class="left carousel-control" href="#home-slider" role="button" data-slide="prev"></a>
-            <a class="right carousel-control" href="#home-slider" role="button" data-slide="next"></a>
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
-
-
-
-
-
-
-<h2>EBOOKS</h2>
-<div class="flex-container">
-    <div> <div class="card-img-actions"> <img src="https://www.getvalue.co/media/products/jinsi_ake:_jinsia_ya_kike_02062021_10_54.jpeg" style="width:100%">
- </div>
-  <h4 >Jinsi Ake: Jinsia Ya Kike</h4>
-  <p class="price">10,000 <small>Tsh.</small></p>
-      <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
- <p>Sold by <span style="color: #d6bd60"> Miss Lukleshia Kulindwa.</span></p>
-</div>
-  <div> <img src="https://www.getvalue.co/media/products/agano_la_ulithi_31052021_12_00.jpeg"  style="width:100%">
-  <h4>Agano La Ulithi</h4>
-  <p class="price">7,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-<p>Sold by <span style="color: #d6bd60">ELIAS MBUJILO JOSEPH.</span></p>
-</div>
-  
-  <div><img src="https://www.getvalue.co/media/products/maombi_ya_kuvunja_vizuizi_30052021_10_34.jpeg" style="width:100%">
-  <h4>Maombi Ya Kuvunja Vizuizi</h4>
-  <p class="price">10,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> ELIAS MBUJILO JOSEPH.</span></p>
-</div>  
-  <div><div class="card-img-actions"> <img src="https://www.getvalue.co/media/products/jinsi_ake:_jinsia_ya_kike_02062021_10_54.jpeg" style="width:100%">
- </div>
-  <h4 >Jinsi Ake: Jinsia Ya Kike</h4>
-  <p class="price">10,000 <small>Tsh.</small></p>
-      <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
- <p>Sold by <span style="color: #d6bd60"> Miss Lukleshia Kulindwa.</span></p></div>
-  <div><img src="https://www.getvalue.co/media/products/mateso_31052021_12_03.jpeg" style="width:100%">
- <h4>MATESO</h4>
-  <p class="price">6,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
- <p>Sold by <span style="color: #d6bd60"> Musa Ngonyani.</span></p>
-</div>
-  <div> <img src="https://www.getvalue.co/media/products/amri_kuu_za_kufanya_biashara_29052021_07_16.jpeg" style="width:100%">
-  <h4>AMRI KUU ZA KUFANYA BIASHARA</h4>
-  <p class="price">5,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> Simeon Mihinga.</span></p></div>  
-  <div> <img src="https://www.getvalue.co/media/products/natamani_kuwa_mjasiriamali:_visa_na_mikasa_ya_wajasiriamali_29052021_07_19.jpeg" style="width:100%">
-  <h4>Natamani Kuwa Mjasiriamali: Visa Na Mikasa Ya Wajasiriamali</h4>
-  <p class="price">5,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> Simeon Mihinga.</span></p>
- </div>
-  <div><img src="https://www.getvalue.co/media/products/jifunze_kusaidia_wajane_na_yatima_29052021_07_21.jpeg" style="width:100%">
-  <h4>Jifunze Kusaidia Wajane Na Yatima</h4>
-  <p class="price">3,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> EMMANUELY PHILIPO KANEMILE.</span></p></div>
-  <div><img src="https://www.getvalue.co/media/products/jifunze_kusaidia_wajane_na_yatima_29052021_07_21.jpeg" style="width:100%">
-  <h4>Jifunze Kusaidia Wajane Na Yatima</h4>
-  <p class="price">3,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> EMMANUELY PHILIPO KANEMILE.</span></p></div>  
-  <div><img src="https://www.getvalue.co/media/products/jifunze_kusaidia_wajane_na_yatima_29052021_07_21.jpeg" style="width:100%">
-  <h4>Jifunze Kusaidia Wajane Na Yatima</h4>
-  <p class="price">3,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> EMMANUELY PHILIPO KANEMILE.</span></p></div>
-  <div><img src="https://www.getvalue.co/media/products/jifunze_kusaidia_wajane_na_yatima_29052021_07_21.jpeg" style="width:100%">
-  <h4>Jifunze Kusaidia Wajane Na Yatima</h4>
-  <p class="price">3,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> EMMANUELY PHILIPO KANEMILE.</span></p></div>
-  <div><img src="https://www.getvalue.co/media/products/jifunze_kusaidia_wajane_na_yatima_29052021_07_21.jpeg" style="width:100%">
-  <h4>Jifunze Kusaidia Wajane Na Yatima</h4>
-  <p class="price">3,000 <small>Tsh.</small></p>
-  <div style="color:#e4e6ec;" class="star">
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-        <i class="fa fa-star" aria-hidden="true"></i>
-      </div>
-  <p>Sold by <span style="color: #d6bd60"> EMMANUELY PHILIPO KANEMILE.</span></p></div>  
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <div class="insiders">
-        <div class="container-fluid">
-            <h2>INSIDER'S POPULAR POST</h2>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/why_i_don’t_want_a_job_21032020_03_04.jpg" alt="Why I Don’t Want A Job">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
-                                            Why I Don’t Want A Job <br> 
-                                            <small><i class="fa fa-eye"></i> 4555 </small>
-                                            <small><i class="fa fa-comments-o"></i> 2</small>
+  <img src="https://www.getvalue.co/media/blog/why_i_don’t_want_a_job_21032020_03_04.jpg" alt="" style="width:100%;">
+  <div class="content">
+     <p >   Why I Don’t Want A Job <br> 
+<small><i class="fa fa-eye"></i> 4555 </small>
+<small><i class="fa fa-comments-o"></i> 2</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/i_don’t_sell_my_time_i_sell_value_to_the_marketplace_21032020_03_02.jpg" alt="I Don’t Sell My Time; I Sell Value To The Marketplace">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
-                                            I Don’t Sell My Time; I Sell Value To The Marketplace <br> 
+  </div>
+</div>
+<br>
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/i_don’t_sell_my_time_i_sell_value_to_the_marketplace_21032020_03_02.jpg" alt="" style="width:100%;">
+  <div class="content">
+     <p>    I Don’t Sell My Time; I Sell Value To The Marketplace <br> 
                                             <small><i class="fa fa-eye"></i> 1019 </small>
                                             <small><i class="fa fa-comments-o"></i> 0</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/we,_unajua_una_kibamia_mbizi_za_nini_01122020_04_36.jpg" alt="WE, UNAJUA UNA KIBAMIA MBIZI ZA NINI?">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
-                                            WE, UNAJUA UNA KIBAMIA MBIZI ZA NINI? <br> 
-                                            <small><i class="fa fa-eye"></i> 995 </small>
-                                            <small><i class="fa fa-comments-o"></i> 0</small>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/darasa_la_kuandika_ebook_za_biashara_na_ujasiriamali_19102020_05_29.jpg" alt="DARASA LA KUANDIKA EBOOK ZA BIASHARA NA UJASIRIAMALI">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/darasa_la_kuandika_ebook_za_biashara_na_ujasiriamali_19102020_05_29.jpg" alt="" style="width:100%;">
+  <div class="content">
+     <p>
+                        
                                             DARASA LA KUANDIKA EBOOK ZA BIASHARA NA UJASIRIAMALI <br> 
                                             <small><i class="fa fa-eye"></i> 849 </small>
                                             <small><i class="fa fa-comments-o"></i> 0</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/why_who_you_are,_is_more_important_than_what_you_do_21032020_02_58.jpg" alt="Why Who You Are, Is More Important Than What You Do">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
-                                            Why Who You Are, Is More Important Than What You Do <br> 
-                                            <small><i class="fa fa-eye"></i> 709 </small>
-                                            <small><i class="fa fa-comments-o"></i> 2</small>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_who_you_are,_is_more_important_than_what_you_do_21032020_02_58.jpg" alt="" style="width:100%;">
+  <div class="content">
+    <p> Why Who You Are, Is More Important Than What You Do <br> <small><i class="fa fa-eye"></i> 709 </small>
+     <small><i class="fa fa-comments-o"></i> 2</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/how_billionaires_think_21032020_03_00.jpeg" alt="How Billionaires Think">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/how_billionaires_think_21032020_03_00.jpeg" alt="" style="width:100%;">
+  <div class="content">
+      <p>
+                        
+                    
                                             How Billionaires Think <br> 
                                             <small><i class="fa fa-eye"></i> 588 </small>
                                             <small><i class="fa fa-comments-o"></i> 3</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/why_entrepreneurship_is_more_of_an_emotional_decision_than_a_logical_one_21032020_02_54.jpeg" alt="Why Entrepreneurship Is More of An Emotional Decision Than A Logical One">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
-                                            Why Entrepreneurship Is More of An Emotional Decision Than A Logical One <br> 
-                                            <small><i class="fa fa-eye"></i> 554 </small>
-                                            <small><i class="fa fa-comments-o"></i> 0</small>
+  </div>
+</div>
+
+<br>
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_entrepreneurship_is_more_of_an_emotional_decision_than_a_logical_one_21032020_02_54.jpeg" alt="" style="width:100%;">
+  <div class="content">
+      <p>
+  Why Entrepreneurship Is More of An Emotional Decision Than A Logical One <br> <small><i class="fa fa-eye"></i> 554 </small>
+     <small><i class="fa fa-comments-o"></i> 0</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                        <div class="col-md-3">
-                <div class="">
-                    <div class="article">
-                        <a href="#"><img class="img-responsive" src="https://www.getvalue.co/media/blog/why_i_think_there_are_a_lot_of_business_ideas_out_there_15032020_12_35.jpeg" alt="Why I Think There Are A Lot Of Business Ideas Out There">
-                            <div class="overlay">
-                                <div class="slider-post-meta">
-                                    <div class="text-overlay-title">
-                                        <p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_i_think_there_are_a_lot_of_business_ideas_out_there_15032020_12_35.jpeg" alt="" style="width:100%;">
+  <div class="content">
+      <p >
+                       
                                             Why I Think There Are A Lot Of Business Ideas Out There <br> 
                                             <small><i class="fa fa-eye"></i> 512 </small>
                                             <small><i class="fa fa-comments-o"></i> 0</small>
                                         </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-                    </div>
-    </div>
+  </div>
+</div>
+<br>
+
+<b><h3>AUDIOBOOKS</h3></b>
 
 
-</body>
-</html>
 
 
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-.flex-container2 {
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-}
+<br>
+<br>
 
-.flex-container2 > div {
-  width: 250px;
-  margin: 10px;
-  text-align: left;
-  padding-left: 32px;
+<b><h3>CONTRIBUTOR'S POPULAR POST</h3></b>
+<br>
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/that’s_weird…but_i_like_it!_21032020_02_26.jpg" alt="" style="width:100%;">
+  <div class="content">
+     <p>That’s Weird…But I Like It! <br> 
+     <small><i class="fa fa-eye"></i> 5715 </small>
+    <small><i class="fa fa-comments-o"></i> 2</small>
+                                        </p>
+  </div>
+</div>
+<br>
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_i’m_not_here_to_judge_you_or_tell_you_how_to_live_your_life_21032020_02_29.jpeg" alt="" style="width:100%;">
+  <div class="content">
+        <p>  Why I’m Not Here To Judge You Or Tell You How To Live Your Life <br> 
+        <small><i class="fa fa-eye"></i> 3958 </small>
+          <small><i class="fa fa-comments-o"></i> 0</small>
+                                        </p>
+  </div>
+</div>
+<br>
 
-}
-.flex-container2:hover{
-   border: 2px;
-   box-shadow:  0 4px 8px 0 rgba(0 ,0 ,0 ,0.2);
-}
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_entrepreneurship_isn’t_real_about_starting_your_own_business_21032020_02_33.jpeg" alt="" style="width:100%;">
+  <div class="content">
+    <p>Why Entrepreneurship Isn’t Real About Starting Your Own Business <br> <small><i class="fa fa-eye"></i> 3633 </small>
+    <small><i class="fa fa-comments-o"></i> 0</small>
+                                        </p>
+  </div>
+</div>
+<br>
 
-</style>
-</head>
-<body>
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_i_need_you_to_quit_your_day_job_21032020_02_42.jpeg" alt="" style="width:100%;">
+  <div class="content">
+    <p>
+                                            Why I Need You To Quit Your Day Job <br> 
+                                            <small><i class="fa fa-eye"></i> 1515 </small>
+                                            <small><i class="fa fa-comments-o"></i> 0</small>
+                                        </p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/i_am_not_a_bad_person,_i_am_a_bad_employee_21032020_02_43.jpeg" alt="" style="width:100%;">
+  <div class="content">
+     <p>
+                                            I Am Not A Bad Person, I Am A Bad Employee <br> 
+                                            <small><i class="fa fa-eye"></i> 1297 </small>
+                                            <small><i class="fa fa-comments-o"></i> 10</small>
+                                        </p>
+</div>
+
+<br>
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_most_employees_stay_employees_forever_21032020_02_39.jpg" alt="Why Most Employees Stay Employees Forever" alt="" style="width:100%;">
+  <div class="content">
+     <p>
+                                            Why Most Employees Stay Employees Forever <br> 
+                                            <small><i class="fa fa-eye"></i> 887 </small>
+                                            <small><i class="fa fa-comments-o"></i> 0</small>
+                                        </p>
+  </div>
+</div>
+<br>
+
+<div class="container">
+  <img src="https://www.getvalue.co/media/blog/why_i_hate_being_an_employee_21032020_02_31.jpeg" alt="" style="width:100%;">
+  <div class="content">
+      <p>
+                                            Why I Hate Being An Employee <br> 
+                                            <small><i class="fa fa-eye"></i> 692 </small>
+                                            <small><i class="fa fa-comments-o"></i> 0</small>
+                                        </p>
+  </div>
+</div>
+<br>
+
+
+
+
 
 
 
 <div class="flex-container2">
-    <h2>ONLINE TRAININGS & PROGRAMS</h2>
+     <h3 style="color:white; padding-left: 12px;">ONLINE TRAININGS & PROGRAMS</h3>
   <div>
 <div class="product-image">
                         <a href="#"><img src="https://www.getvalue.co/media/products/sequence_and_series_10062021_05_42.png" alt="" style="width:120%; height:180px;" ></a>
@@ -1035,8 +591,6 @@ ul{
                     </div></div> 
 </div>
 
-</body>
-</html>
 
 
 
@@ -1049,28 +603,17 @@ ul{
 
 
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title></title>
-</head>
-<body>
-
-
-
-
-    <section class="our-webcoderskull padding-lg">
+  <section class="our-webcoderskull padding-lg">
   <div class="container">
     <div class="row heading heading-icon">
-        <h2>FEATURED INSIDERS & CONTRIBUTORS</h2>
+        <h3 style="color:white; padding-left: 12px;">FEATURED INSIDERS & CONTRIBUTORS</h3>
     </div>
     <ul class="row">
       <li class="col-12 col-md-6 col-lg-3">
           <div class="cnt-block equal-hight" style="height: 349px;">
             <figure><img src="https://www.getvalue.co/media/seller_avatars/default.png" class="img-responsive" alt=""></figure>
             <h3><a href="http://www.webcoderskull.com/">Eliudi Mwakamela</a></h3>
-            <p style="color: #b6bd70;">Insider</p>
+            <p style="color: #d6bd70;">Insider</p>
           </div>
       </li>
       <li class="col-12 col-md-6 col-lg-3">
@@ -1100,7 +643,7 @@ ul{
   </div>
 </section>
 <div style="">
-  <div class="gaston" style="background: #150041;">
+  <div class="gaston" style="background: #081f2c;">
                         
             <div class="container-fluid clearfix" style="color:midnightblue">
                 
@@ -1129,26 +672,26 @@ ul{
 
                     <div class="col-md-8">
                                                 <div class="gaston-article" >
-                            <h5>That’s Weird…But I Like It!</h5>
+                           <b><h4>That’s Weird…But I Like It!</h4></b> 
                             <!-- <p></p> -->
                             <p>My girlfriend and I neither of us have jobs! Therefore, we have been entrepreneurs for quite a while. I do remember that, one day we spent a real long time</p>
-                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 50%;
+                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 30%;
   font-size: 15px;">Read more</a>
                         </div>
                         <hr>
                                                 <div class="gaston-article">
-                            <h5>Why I Don’t Want A Job</h5>
+                           <b> <h4>Why I Don’t Want A Job</h4></b>
                             <!-- <p></p> -->
                             <p>There are a lots of common reasons why most people start their own businesses but if you look at them very closely you will discover that they all stems in</p>
-                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 50%;
+                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 30%;
   font-size: 15px;">Read more</a>
                         </div>
                         <hr>
                                                 <div class="gaston-article">
-                            <h5>Why I’m Not Here To Judge You Or Tell You How To Live Your Life</h5>
+                           <b> <h4>Why I’m Not Here To Judge You Or Tell You How To Live Your Life</h4></b>
                             <!-- <p></p> -->
                             <p>Being a good entrepreneur does not necessarily mean you can start talking about yourself all the time and everyone will listen – but is quite the opposite. You need to</p>
-                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 50%;
+                            <a href="#" class="btn btn-success" style="background:  #d6bd60; width: 30%;
   font-size: 15px;">Read more</a>
   <br>
           <br>
@@ -1160,244 +703,41 @@ ul{
         </div>
           </div>
 
-</body>
-
-
-</html>
-
 <br>
 <br>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title></title>
-</head>
-<style>
-body {
-  font-family: system-ui;
-  text-align: center;
-}
 
-
-.site-footer {
-    position: relative;
-    background-color:black;
-    width: 100%;    
-    bottom: 0; 
-}
-
-.site-footer .container {
-    max-width: 85%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    padding-top: 20px;
-}
+<section class="contact-area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <a href="#"><img src="logo.png" alt="logo"></a>
+                         <h2 style="color:white;">JOIN OUR NETWORK</h2>
+                        <p>Get our best advice of the week direct to your inbox</p>
 
 
 
-
-.site-footer .grid-container a {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 16.25px;
-}
-
-.site-footer .grid-item {
-    padding: 5px;
-    color: white;
-}
-
-
-.site-footer .grid-container .inner-grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    text-align: left;
-}
-
-.site-footer .container hr { 
-    display: block; 
-    height: 1px;
-    border: 0; border-top: 1px solid white;
-    margin: 1px; 
-    padding: 0; 
-}
-
-.site-footer .container p {
-    font-size: 13px;
-    text-align: center;
-    color:white;
-    font-weight: 400;
-}
-
-.site-footer .container .logo-img {
-    width: 220px;
-    height: ;
-    cursor: pointer;
-}
-
-.site-footer .grid-container .grid-item .social-buttons {
-    padding-top: 10px;
-}
-
-.site-footer .grid-container .grid-item .social-buttons a {
-    display: inline-flex;
-    text-decoration: none;
-    font-size: 20px;
-    width: 40px;
-    height: 40px;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    margin: 0 2px;
-}
-
-
-.site-footer .grid-container .grid-item .social-buttons a i{
-    transition: 0.3s ease-in;
-}
-
-.site-footer .grid-container .grid-item .social-buttons a:hover i {
-    background: linear-gradient(45deg,#A2845C,#A2845C);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    transform: scale(1.5);
-}
-
-.circle-icon {
-    background: #A2845C;
-    padding:12px;
-    border-radius: 50%;
-}
-
-.info{
-  display: inline-block;
-  margin-right: 5px;
-}
-
-.topnav .search-container {
-  float: right;
-}
-
-.topnav input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-
-.topnav .search-container button {
-  float: right;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #d6bd70;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
- .search-container button:hover {
-  background: #d6bd70;
-}
-
-
-
-
-
-
-
-/*------------------------------------------------------------------
-[ Screen Sizes] */
-
-
-
-@media only screen and (min-width: 992px) {
-
-    .site-footer {
-        width: 300px;
-        height: 360px;
-        bottom: 0;
-    }
-
-    .site-footer .grid-container {
-        display: grid;
-        grid-template-columns: 350px auto 350px;
-    }
-
-    .site-footer .grid-container .inner-grid-container{
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        text-align: left;
-    }
-
-
-}
-
-</style>
-<body>
-        <footer class="site-footer">
-        <div class = "container">
-
-            <div class="grid-container">
-                <div class="grid-item">
-                    
-                    <img src = "logo.png" class = "logo-img">
-
-                </div>
-                <h2 style="color:white;">JOIN OUR NETWORK</h2>
-                    <p>Get our best advice of the week direct to your inbox</p>
-                    <div class="info">
-   <div class="search-container">
-    <form action="/action_page.php">
-      <input type="text" placeholder="Your Email" name="search">
-      <button type="submit" style="background:#d6bd70;">Subscribe</button>
-    </form>
-  </div>
-
-                 
-                 <br>
-<hr>
-                <div class="grid-item">
-                    
-        
-                           <a href="#">Customer Support</a>  |
-                            <a href="#">Self Help Center</a>  |
-                            <a href="#">GetValue TV</a>  |
-                          <a href="#">Sell On GetValue</a>  |
-                          <a href="#">Become an Affiliate</a>  |
-                         <a href="#">Contact Us</a>  |
-                           <a href="#">About GetValue</a>
+                        <div class="hr"></div>
                        
-
+                        <h6><a href="">Customer Support</a><b><span>|</span></b><a href="">Self Help Center </a><span>|</span><a href="">GetValue TV</a><span>|</span><a href="">Sell On GetValue </a> <span>|</span><a href="">Become an Affiliate </a><span>|</span><a href="">Contact Us</a><span>|</span><a href="">About GetValue</a></h6>
+                        <div class="contact-social">
+                            <ul>
+                                <li><a class="hover-target" href=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                 
+        <p class="g" style="color: #debe67;">Copyright &copy; 2021 <img src="logo.png" alt="logo"> All Rights Reserved.</p>
+        <h6><a href="">Terms of Service</a><span>|</span><a href="">Privacy Policy</a> <span>|</span><a href="">Cookies Policy</a></h6>
+    
+    </div>
                 </div>
-
-                <div class="grid-item">
-                    <div class = "social-buttons">
-                        <a href="https://m.facebook.com/getvalueinc/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                     <a href="https://mobile.twitter.com/getvalueinc/"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                      <a href="https://www.instagram.com/getvalueinc/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://www.linkedin.com/company/getvalueinc"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                       <a href="https://m.youtube.com/channel/UCuSS0Qj54SWQKF1cYT-IOBQ"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
-                </div>   
-            
-           
-
-            <p style="color: #debe67;">Copyrights © 2021 GetValue  |  All Rights Reserved</p>
-
-           <div class="grid-item">
-                            <a href="#">Terms of Service</a> |
-                          <a href="#">Privacy Policy</a> |
-                          <a href="#">Cookies Policy</a>
-                 </div>
-        </div></div>
-    </footer>
-
-
+            </div>
+        </div>
+    </section>
 </body>
 </html>
